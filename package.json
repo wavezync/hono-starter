@@ -1,0 +1,27 @@
+{
+  "name": "hono-starter",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "lint:fix": "biome check --write ./src",
+    "start": "node dist/index.js",
+    "build": "tsc && tsc-alias"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "dotenv": "^16.4.5",
+    "envalid": "^8.0.0",
+    "hono": "^4.6.2",
+    "pino": "^9.4.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.1",
+    "@types/node": "^20.16.5",
+    "tsc-alias": "^1.8.10",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
